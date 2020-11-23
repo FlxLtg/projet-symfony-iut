@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Product index{% endblock %}
+
+{% block body %}
+    <h1>Product index</h1>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>PictureFirst</th>
+                <th>PictureSecond</th>
+                <th>PictureThird</th>
+                <th>PriceHT</th>
+                <th>PriceTTC</th>
+                <th>CratedAt</th>
+                <th>UpdatedAt</th>
+                <th>DeletedAt</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for product in products %}
+            <tr>
+                <td>{{ product.id }}</td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.description }}</td>
+                <td>{% if product.pictureFirst %}<img class="img-thumbnail" src="{{ asset('uploads/' ~ product.pictureFirst) }}"/>{% endif %}</td>
+                <td>{% if product.pictureSecond %}<img class="img-thumbnail" src="{{ asset('uploads/' ~ product.pictureSecond) }}"/>{% endif %}</td>
+                <td>{% if product.pictureThird %}<img class="img-thumbnail" src="{{ asset('uploads/' ~ product.pictureThird) }}"/>{% endif %}</td>
+                <td>{{ product.priceHT }}</td>
+                <td>{{ product.priceTTC }}</td>
+                <td>{{ product.cratedAt ? product.cratedAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ product.updatedAt ? product.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ product.deletedAt ? product.deletedAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td>
+                    <a href="{{ path('product_show', {'id': product.id}) }}"><i class="eye icon"></i></a>
+                    <a href="{{ path('product_edit', {'id': product.id}) }}"><i class="edit icon"></i></a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="12">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('product_new') }}">Create new</a>
+{% endblock %}

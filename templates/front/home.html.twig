@@ -1,0 +1,25 @@
+{% extends 'base_front.html.twig' %}
+
+{% block title %}E-commerce - Ma page{% endblock %}
+
+{% block body %}
+
+    {% for p in products %}
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img class="img-thumbnail" src="{{ asset('uploads/' ~ p.pictureFirst ) }}">
+                <div class="card-body">
+                    <p class="card-text">{{ p.name }}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary"><i class="edit icon"></i></button>
+                        </div>
+                        <small class="text-muted">{% for c in p.categories %}{{ c.name }} {% endfor %}</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+{% endblock %}
