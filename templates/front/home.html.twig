@@ -3,6 +3,7 @@
 {% block title %}E-commerce - Ma page{% endblock %}
 
 {% block body %}
+<<<<<<< HEAD
 
     {% for p in products %}
         <div class="col-md-4">
@@ -15,6 +16,23 @@
                             <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                             <button type="button" class="btn btn-sm btn-outline-secondary"><i class="edit icon"></i></button>
                         </div>
+=======
+    <div class="col-12">
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <button class="btn">{{ button_label|default('Rechercher') }}</button>
+        {{ form_end(form) }}
+    </div>
+    {% for p in products %}
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <a href="{{ path('front_article', {'id': p.id}) }}">
+                    <img class="img-thumbnail" src="{{ asset('uploads/' ~ p.pictureFirst ) }}">
+                </a>
+                <div class="card-body">
+                    <p class="card-text">{{ p.name }}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
                         <small class="text-muted">{% for c in p.categories %}{{ c.name }} {% endfor %}</small>
                     </div>
                 </div>

@@ -6,10 +6,18 @@ use App\Repository\UserRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+<<<<<<< HEAD
+=======
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
+<<<<<<< HEAD
+=======
+ * @UniqueEntity(fields={"email"}, message="There is already an account with this email")
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
  */
 class User implements UserInterface
 {
@@ -205,4 +213,17 @@ class User implements UserInterface
 
         return $this;
     }
+<<<<<<< HEAD
+=======
+
+    public function getOrdersByStatus($status)
+    {
+        foreach ($this->orders as $order) {
+            if ($order->getStatus() == $status) {
+                return $order;
+            }
+        }
+        return null;
+    }
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
 }

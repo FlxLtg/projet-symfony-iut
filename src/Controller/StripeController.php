@@ -31,6 +31,10 @@ class StripeController extends AbstractController
 
         dump($customer);
 
+<<<<<<< HEAD
         die();  
+=======
+        die();
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
     }
 }

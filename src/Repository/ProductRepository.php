@@ -2,6 +2,10 @@
 
 namespace App\Repository;
 
+<<<<<<< HEAD
+=======
+use App\Entity\Category;
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
 use App\Entity\Product;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
@@ -41,6 +45,45 @@ class ProductRepository extends ServiceEntityRepository
             ->getResult();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return Product[] Returns an array of Brand objects
+     */
+    public function findByArgs($args)
+    {
+        $q = $this->createQueryBuilder('p')
+            ->join('p.categories', 'c')
+            ->andWhere('p.deletedAt is NULL')
+        ;
+
+        if (isset($args['q']) && !empty($args['q'])) {
+            $q->andWhere('p.name LIKE :q OR p.description LIKE :q')
+                ->setParameter('q', '%' . $args['q'] . '%');
+        }
+
+        if (isset($args['categories']) && !empty($args['categories'])) {
+            $cats = [];
+
+            /** @var Category $cat */
+            foreach ($args['categories'] as $cat) {
+                $cats[] = $cat->getId();
+            }
+            if (!empty($cats)) {
+                $q->andWhere('c.category IN (:cats)')
+                    ->setParameter('cats', $cats);
+            }
+        }
+
+        $q
+            ->orderBy('p.id', 'ASC');
+
+        return $q
+            ->getQuery()
+            ->getResult();
+    }
+
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
     // /**
     //  * @return Product[] Returns an array of Product objects
     //  */
