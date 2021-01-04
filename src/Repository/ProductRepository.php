@@ -2,10 +2,7 @@
 
 namespace App\Repository;
 
-<<<<<<< HEAD
-=======
 use App\Entity\Category;
->>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
 use App\Entity\Product;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
@@ -45,8 +42,6 @@ class ProductRepository extends ServiceEntityRepository
             ->getResult();
     }
 
-<<<<<<< HEAD
-=======
     /**
      * @return Product[] Returns an array of Brand objects
      */
@@ -83,7 +78,6 @@ class ProductRepository extends ServiceEntityRepository
             ->getResult();
     }
 
->>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
     // /**
     //  * @return Product[] Returns an array of Product objects
     //  */

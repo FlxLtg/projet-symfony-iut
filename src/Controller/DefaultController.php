@@ -3,10 +3,6 @@
 namespace App\Controller;
 
 use App\Entity\Brand;
-<<<<<<< HEAD
-use App\Entity\Product;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-=======
 use App\Entity\Item;
 use App\Entity\Order;
 use App\Entity\Product;
@@ -14,7 +10,6 @@ use App\Entity\User;
 use App\Form\SearchProductType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
->>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -23,18 +18,6 @@ class DefaultController extends AbstractController
     /**
      * @Route("/", name="front_default")
      */
-<<<<<<< HEAD
-    public function home(): Response
-    {
-        $brands = $this->getDoctrine()->getRepository(Brand::class)->findByDeletedAt();
-        $products =  $this->getDoctrine()->getRepository(Product::class)->findByDeletedAt('p.name');
-
-        return $this->render('front/home.html.twig', [
-            'brands' => $brands,
-            'products' => $products
-        ]);
-    }
-=======
     public function home(Request $request): Response
     {
         $searchForm = $this->createForm(SearchProductType::class, null);
@@ -119,5 +102,4 @@ class DefaultController extends AbstractController
     {
         return $this->render('front/commands.html.twig');
     }
->>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
 }
