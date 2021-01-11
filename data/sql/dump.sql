@@ -3,7 +3,15 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
+<<<<<<< HEAD
+<<<<<<< HEAD
+-- Generation Time: Nov 03, 2020 at 08:22 AM
+=======
+-- Generation Time: Nov 23, 2020 at 02:54 PM
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
+=======
 -- Generation Time: Jan 04, 2021 at 08:05 AM
+>>>>>>> 1fa19cc2fcc974fa305dc8e72934aacb91b2ec9f
 -- Server version: 5.7.26
 -- PHP Version: 7.4.2
 
@@ -26,6 +34,8 @@ CREATE TABLE `brand` (
   `deleted_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+<<<<<<< HEAD
+=======
 --
 -- Dumping data for table `brand`
 --
@@ -35,6 +45,7 @@ INSERT INTO `brand` (`id`, `name`, `deleted_at`) VALUES
 (3, 'Dell', NULL),
 (4, 'Sony', NULL);
 
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
 -- --------------------------------------------------------
 
 --
@@ -47,6 +58,8 @@ CREATE TABLE `category` (
   `deleted_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+<<<<<<< HEAD
+=======
 --
 -- Dumping data for table `category`
 --
@@ -55,6 +68,7 @@ INSERT INTO `category` (`id`, `name`, `deleted_at`) VALUES
 (1, 'Informatique', NULL),
 (2, 'Audio', NULL);
 
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
 -- --------------------------------------------------------
 
 --
@@ -152,6 +166,8 @@ CREATE TABLE `product` (
   `deleted_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+<<<<<<< HEAD
+=======
 --
 -- Dumping data for table `product`
 --
@@ -164,6 +180,7 @@ INSERT INTO `product` (`id`, `brand_id`, `name`, `description`, `picture_first`,
 (6, 2, 'Bose', '<p>Vestibulum orci ex, commodo quis mauris ut, molestie dictum est. Aenean sit amet augue at lectus feugiat pulvinar at ac est. Pellentesque molestie odio vel metus fermentum, et pulvinar diam efficitur. Duis tempus varius aliquet. Fusce tempus et lectus quis dignissim. Nulla efficitur urna eget enim ultrices consectetur. Quisque porta a elit a laoreet. Quisque id nisi purus. In hac habitasse platea dictumst. In nec ipsum pretium lacus varius luctus in quis risus. Etiam sed aliquam erat. Ut eget lectus volutpat, venenatis tellus vel, convallis lectus.</p><p>Nam eget felis metus. Pellentesque elit lorem, finibus eu ornare sed, rhoncus in ipsum. Vestibulum efficitur lacus odio, et volutpat justo euismod ut. Ut mauris sapien, laoreet eget risus ac, consectetur lobortis nunc. Vivamus vel odio ex. Fusce ligula nibh, pellentesque dictum imperdiet sit amet, laoreet faucibus orci. Suspendisse at nibh ac ex vulputate pulvinar. Donec vel rutrum sem. Vivamus sed mauris cursus, finibus risus sit amet, interdum nibh. Praesent dapibus dui mauris, ac vestibulum sem commodo at.</p><p>Morbi et congue massa. Sed sit amet malesuada libero. Vestibulum volutpat urna vitae sapien blandit, vel congue neque posuere. Nulla in luctus nunc. Maecenas gravida elementum elit tristique finibus. Vestibulum vel lacinia metus. Phasellus pellentesque ligula commodo nunc ullamcorper, sed cursus neque commodo. Donec a vehicula arcu. Quisque semper massa lorem, non consectetur magna feugiat at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse massa erat, ullamcorper nec ultricies eu, posuere et metus. Sed sed venenatis risus, eget egestas tortor. Proin nisl eros, molestie ut pulvinar ut, congue in nisi. Aenean interdum fermentum consectetur.</p>', '400-320-5fbbb9a9ad7f9.png', '400-320-5fbbb9a9ada0f.png', '400-320-5fbbb9a9adba7.png', 5600, 8500, '2020-11-23 13:31:21', '2020-11-23 14:44:57', NULL),
 (7, 2, 'test', '<p>Vestibulum orci ex, commodo quis mauris ut, molestie dictum est. Aenean sit amet augue at lectus feugiat pulvinar at ac est. Pellentesque molestie odio vel metus fermentum, et pulvinar diam efficitur. Duis tempus varius aliquet. Fusce tempus et lectus quis dignissim. Nulla efficitur urna eget enim ultrices consectetur. Quisque porta a elit a laoreet. Quisque id nisi purus. In hac habitasse platea dictumst. In nec ipsum pretium lacus varius luctus in quis risus. Etiam sed aliquam erat. Ut eget lectus volutpat, venenatis tellus vel, convallis lectus.</p><p>Nam eget felis metus. Pellentesque elit lorem, finibus eu ornare sed, rhoncus in ipsum. Vestibulum efficitur lacus odio, et volutpat justo euismod ut. Ut mauris sapien, laoreet eget risus ac, consectetur lobortis nunc. Vivamus vel odio ex. Fusce ligula nibh, pellentesque dictum imperdiet sit amet, laoreet faucibus orci. Suspendisse at nibh ac ex vulputate pulvinar. Donec vel rutrum sem. Vivamus sed mauris cursus, finibus risus sit amet, interdum nibh. Praesent dapibus dui mauris, ac vestibulum sem commodo at.</p><p>Morbi et congue massa. Sed sit amet malesuada libero. Vestibulum volutpat urna vitae sapien blandit, vel congue neque posuere. Nulla in luctus nunc. Maecenas gravida elementum elit tristique finibus. Vestibulum vel lacinia metus. Phasellus pellentesque ligula commodo nunc ullamcorper, sed cursus neque commodo. Donec a vehicula arcu. Quisque semper massa lorem, non consectetur magna feugiat at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse massa erat, ullamcorper nec ultricies eu, posuere et metus. Sed sed venenatis risus, eget egestas tortor. Proin nisl eros, molestie ut pulvinar ut, congue in nisi. Aenean interdum fermentum consectetur.</p>', '400-320-5fbbba8fe00e9.png', NULL, NULL, 5, 6, '2020-11-23 13:35:11', NULL, '2020-11-23 14:36:30');
 
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
 -- --------------------------------------------------------
 
 --
@@ -175,6 +192,8 @@ CREATE TABLE `product_sub_category` (
   `sub_category_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+<<<<<<< HEAD
+=======
 --
 -- Dumping data for table `product_sub_category`
 --
@@ -188,6 +207,7 @@ INSERT INTO `product_sub_category` (`product_id`, `sub_category_id`) VALUES
 (6, 2),
 (7, 1);
 
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
 -- --------------------------------------------------------
 
 --
@@ -214,6 +234,8 @@ CREATE TABLE `sub_category` (
   `deleted_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+<<<<<<< HEAD
+=======
 --
 -- Dumping data for table `sub_category`
 --
@@ -222,6 +244,7 @@ INSERT INTO `sub_category` (`id`, `category_id`, `name`, `deleted_at`) VALUES
 (1, 2, 'Son', NULL),
 (2, 1, 'PC', NULL);
 
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
 -- --------------------------------------------------------
 
 --
@@ -246,10 +269,18 @@ INSERT INTO `user` (`id`, `email`, `roles`, `password`, `firstname`, `lastname`,
 (1, 'jyjebicy@mailinator.com', '[\"ROLE_CUSTOMER\",\"ROLE_ADMIN\"]', 'Suscipit elit corpo', 'Hayes', 'Alvarez', NULL),
 (2, 'gopupur@mailinator.com', '[\"ROLE_ADMIN\"]', 'Pa$$w0rd!qcxwwxc', 'Jeanette', 'Page', NULL),
 (3, 'zozof@mailinator.com', '[\"ROLE_ADMIN\"]', '$argon2id$v=19$m=65536,t=4,p=1$vtt4tfGpZ1huwmHNElic1A$UQiOUAjV6mZG3lzT14jkWrKFU5IQ0qOGDh4DiCLoYSk', 'Wade', 'Robles', NULL),
+<<<<<<< HEAD
+(4, 'xobyz@mailinator.com', '[\"ROLE_ADMIN\"]', '$argon2id$v=19$m=65536,t=4,p=1$eym3eJEEjAWQVKe7BHE6Kw$3tMs95iRDe5149tGb4oNpiJeEr70o6DIjyjeKxsT7lQ', 'Ishmael', 'Chambers', NULL);
+=======
 (4, 'xobyz@mailinator.com', '[\"ROLE_ADMIN\"]', '$argon2id$v=19$m=65536,t=4,p=1$eym3eJEEjAWQVKe7BHE6Kw$3tMs95iRDe5149tGb4oNpiJeEr70o6DIjyjeKxsT7lQ', 'Ishmael', 'Chambers', NULL),
 (5, 'xobyz2@mailinator.com', '[\"ROLE_ADMIN\"]', '$argon2id$v=19$m=65536,t=4,p=1$hiDX5v5gSTSSTg64I+lgLg$0eSrBmAEk0EuhlQZN8/7GEboeH39xJ+OxgQDj1y3VFM', 'Jean', 'Durmeson', NULL),
+<<<<<<< HEAD
+(6, 'aaaa@google.com', '[\"ROLE_ADMIN\"]', '$argon2id$v=19$m=65536,t=4,p=1$qbgYjzAhC4ENqAAwzYOEYQ$5zhJw12Xh4IvBqSA2mG2NaHlZ16cg09WMRuSwgXHYSU', 'AAA', 'AAA', NULL);
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
+=======
 (6, 'aaaa@google.com', '[\"ROLE_ADMIN\"]', '$argon2id$v=19$m=65536,t=4,p=1$qbgYjzAhC4ENqAAwzYOEYQ$5zhJw12Xh4IvBqSA2mG2NaHlZ16cg09WMRuSwgXHYSU', 'AAA', 'AAA', 'cus_IZTBlzfhdApr6y'),
 (7, 'julian@codecodex.fr', '[]', '$argon2id$v=19$m=65536,t=4,p=1$PDAoiu27LqLcATc2mOGzMg$NZmSXv5xm9YOIfcKZSfOTAcF9OZrRFrQ6KI8cE5qhOY', 'julian', 'layen', NULL);
+>>>>>>> 1fa19cc2fcc974fa305dc8e72934aacb91b2ec9f
 
 --
 -- Indexes for dumped tables
@@ -332,13 +363,21 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `brand`
 --
 ALTER TABLE `brand`
+<<<<<<< HEAD
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+=======
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
 
 --
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
+<<<<<<< HEAD
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+=======
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
 
 --
 -- AUTO_INCREMENT for table `command`
@@ -356,7 +395,11 @@ ALTER TABLE `item`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
+<<<<<<< HEAD
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+=======
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
 
 --
 -- AUTO_INCREMENT for table `stock`
@@ -368,13 +411,25 @@ ALTER TABLE `stock`
 -- AUTO_INCREMENT for table `sub_category`
 --
 ALTER TABLE `sub_category`
+<<<<<<< HEAD
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+=======
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
+<<<<<<< HEAD
+<<<<<<< HEAD
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
+=======
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+>>>>>>> 1fa19cc2fcc974fa305dc8e72934aacb91b2ec9f
 
 --
 -- Constraints for dumped tables

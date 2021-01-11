@@ -21,7 +21,11 @@
             <tr>
                 <td>{{ user.id }}</td>
                 <td>{{ user.email }}</td>
+<<<<<<< HEAD
+                <td>{% for role in user.roles %}{{ ('roles.' ~ role)|trans }}, {% endfor %}</td>
+=======
                 <td>{% for role in user.roles %}{{ ('roles.' ~ role)|trans|capitalize }}, {% endfor %}</td>
+>>>>>>> ed909716a11659b2557e9e71e4ffdbc6902b7904
                 <td>{{ user.firstname }}</td>
                 <td>{{ user.lastname }}</td>
                 <td>
